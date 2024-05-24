@@ -12,6 +12,7 @@ void displayUsage(const std::string& programName) {
         << "Options:\n"
         << "  -h, --help         Show this help message and exit\n"
         << "  -v, --version      Show version information and exit\n"
+        << "  -f                 Use scaling factor\n"
         << "  -Ff   FILE         Input file Ff\n"
         << "  -Fi   FILE         Input file Fi\n"
         << "  -o    FILE         Output file (default = \"F_rgb.nii\")\n\n"
@@ -184,6 +185,7 @@ double LimitToByte(double value) {
 
 int main(int argc, char* argv[])
 {
+    bFact = true;
     // Store the program name
     std::string programName = argv[0];
     // Vector to hold non-option arguments
@@ -203,6 +205,9 @@ int main(int argc, char* argv[])
         else if (arg == "-v" || arg == "--version") {
             displayVersion();
             return 0;
+        }
+        else if (arg == "-f") {
+            bFact = false;
         }
         else if (arg == "-Ff") {
             if (i + 1 < argc) {
@@ -238,7 +243,13 @@ int main(int argc, char* argv[])
     //
     // conversion factor to get data range from 0 to 1.0
     // 
-    double dFact = 100.0;
+    double dFact;
+    if (bFact) {
+        dFact = 100.0;
+    }
+    else {
+        dFact = 1.0;
+    }
     // 
     // read Ff Nifti
     //

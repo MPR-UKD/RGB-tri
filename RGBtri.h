@@ -19,3 +19,4 @@ void equalizeHistogram(int* pdata, int width, int height, int noslice, int max_v
 void WhiteBalanceBand(int* bandArray, int length);
 double Percentile(double array[], int length, double percentile);
 double LimitToByte(double value);
+bool bFact;

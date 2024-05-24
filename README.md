@@ -2,6 +2,8 @@
 RGBtri is a tool for the creation of color-coded maps of the diffusion components of triexponential diffusion-weighted imaging (DWI).
 
 The inputs to RGBtri are maps of the fast (Ff) and intermediate (Fi) diffusion components. 
+_(Ff and Fi should be scaled as a percentage so that their values range from 0 to 100. 
+If Ff and Fi are between 0 and 1, use the "-f" option when running RGBtri.)_
 The slow component (Fs) is calculated internally by the equation Fd = 1 - Fi - Ff.
 The output of RGBtri is a color-coded parametric image, where Ff uses the red, Fi the green, and Fs the blue color channel.
 
@@ -9,6 +11,7 @@ The syntax of RGBtri is quite simple: _"RGBtri -Ff file1.nii -Fi file2.nii -o ou
 Type _"RGBtri -h"_ for more details.
 Some test data is available in the _"test-data"_ directory.
 A Windows executable is provided in the _"win-binary"_ directory.
+A Linux executable (Ubuntu 22.04.4 LTS) can be found in _"ubuntu-binary"_ directory.
 
 
 ![](assets/color-kidney1.png)
