@@ -13,7 +13,7 @@ Some test data is available in the _"test-data"_ directory.
 ![](assets/color-kidney1.png)
 
 The algorithms presented here are described in: 
-**"Presentation of microstructural diffusion components by color schemes in abdominal organs"** in Magnetic Resonance in Medicine 
+**"Presentation of microstructural diffusion components by color schemes in abdominal organs"** in Magnetic Resonance in Medicine.
 Article DOI: 10.1002/mrm.30183
 
 C++ code is provided to create RGB diffusion component maps. A cmake file has been added for compilation.
