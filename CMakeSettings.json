@@ -34,6 +34,37 @@
           "type": "PATH"
         }
       ]
+    },
+    {
+      "name": "Linux-GCC-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "cmakeExecutable": "cmake",
+      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "remoteMachineName": "1171896360;UbuntuJammy (username=wittsack, port=23, authentication=Password)",
+      "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
+      "remoteBuildRoot": "$HOME/projects/${projectDirName}/${workspaceHash}/out/build/${name}",
+      "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
+      "remoteCopySources": true,
+      "rsyncCommandArgs": "-t --delete",
+      "remoteCopyBuildOutput": false,
+      "remoteCopySourcesMethod": "rsync",
+      "variables": [
+        {
+          "name": "CMAKE_INSTALL_PREFIX",
+          "value": "/home/wittsack/projects/RGBtri/b8aa96e7-63bd-4f3e-82f8-d7f78b4c1c92/out/install/Linux-GCC-Release",
+          "type": "PATH"
+        },
+        {
+          "name": "NIFTI_DIR",
+          "value": "/home/wittsack/projects/nifti_clib-master/18e02719-2b60-421f-af2a-533b5809a142/out/install/Linux-GCC-Release/share/cmake/NIFTI",
+          "type": "PATH"
+        }
+      ]
     }
   ]
 }
