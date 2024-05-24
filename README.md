@@ -5,15 +5,15 @@ The inputs to RGBtri are maps of the fast (Ff) and intermediate (Fi) diffusion c
 The slow component (Fs) is calculated internally by the equation Fd = 1 - Fi - Ff.
 The output of RGBtri is a color-coded parametric image, where Ff uses the red, Fi the green, and Fs the blue color channel.
 
-The syntax of RGBtri is quite simple: "RGBtri -Ff file1.nii -Fi file2.nii -o output.nii".
-Type "RGBtri -h" for more details.
-Some test data is available in the "test-data" directory.
+The syntax of RGBtri is quite simple: _"RGBtri -Ff file1.nii -Fi file2.nii -o output.nii"_.
+Type _"RGBtri -h"_ for more details.
+Some test data is available in the _"test-data"_ directory.
 
 
 ![](assets/color-kidney1.png)
 
 The algorithms presented here are described in: 
-"Presentation of microstructural diffusion components by color schemes in abdominal organs" in Magnetic Resonance in Medicine 
+**"Presentation of microstructural diffusion components by color schemes in abdominal organs"** in Magnetic Resonance in Medicine 
 Article DOI: 10.1002/mrm.30183
 
 C++ code is provided to create RGB diffusion component maps. A cmake file has been added for compilation.
