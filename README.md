@@ -8,6 +8,7 @@ The output of RGBtri is a color-coded parametric image, where Ff uses the red, F
 The syntax of RGBtri is quite simple: _"RGBtri -Ff file1.nii -Fi file2.nii -o output.nii"_.
 Type _"RGBtri -h"_ for more details.
 Some test data is available in the _"test-data"_ directory.
+A Windows executable is provided in the _"win-binary"_ directory.
 
 
 ![](assets/color-kidney1.png)
