@@ -1,8 +1,8 @@
 # RGB-tri
 
 The algorithms presented here are described in: 
-**"Presentation of microstructural diffusion components by color schemes in abdominal organs"** in Magnetic Resonance in Medicine.
-Article DOI: 10.1002/mrm.30183 When using RGBtri, please cite the paper.
+**"Presentation of microstructural diffusion components by color schemes in abdominal organs"** 
+in _Magnetic Resonance in Medicine_ (Article DOI: 10.1002/mrm.30183). When using RGBtri, please cite the paper.
 
 
 RGBtri is a tool for the creation of color-coded maps of the diffusion components 
