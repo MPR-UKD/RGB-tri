@@ -1,8 +1,10 @@
 # RGB-tri
 RGBtri is a tool for the creation of color-coded maps of the diffusion components 
 of triexponential diffusion-weighted imaging (DWI). 
-The following triexponential modes is presumed: 
+The following triexponential modes is presumed:
+
 S(b)/S<sub>0</sub> = F<sub>s</sub> e<sup>-bDs</sup> + F<sub>i</sub> e<sup>-bDi</sup> + F<sub>f</sub> e<sup>-Df</sup>.
+
 RGBtri merges the diffusion fraction of slow, intermediate, and fast components int one rgb image. 
 
 The inputs to RGBtri are maps of the fast (F<sub>f</sub>) and intermediate (F<sub>i</sub>) diffusion components. 
