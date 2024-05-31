@@ -1,4 +1,10 @@
 # RGB-tri
+
+The algorithms presented here are described in: 
+**"Presentation of microstructural diffusion components by color schemes in abdominal organs"** in Magnetic Resonance in Medicine.
+Article DOI: 10.1002/mrm.30183 When using RGBtri, please cite the paper.
+
+
 RGBtri is a tool for the creation of color-coded maps of the diffusion components 
 of triexponential diffusion-weighted imaging (DWI). 
 The following tri-exponential model is assumed.
@@ -24,9 +30,6 @@ A Linux executable (Ubuntu 22.04.4 LTS) can be found in the _"ubuntu-binary"_ di
 
 ![](assets/color-kidney1.png)
 
-The algorithms presented here are described in: 
-**"Presentation of microstructural diffusion components by color schemes in abdominal organs"** in Magnetic Resonance in Medicine.
-Article DOI: 10.1002/mrm.30183 When using RGBtri, please cite the paper.
 
 RGBtri is written in C++. A cmake file has been added for easy compilation on different operating systems.
 Since RGBtri software works with Nifti images, the only dependency is the Nifti package: https://github.com/NIFTI-Imaging/nifti_clib
